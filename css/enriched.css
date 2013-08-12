@@ -1,0 +1,34 @@
+/* 
+CSS3 + vendor-specific styles
+
+-webkit	 	Safari
+-moz 	 	Firefox
+*/
+
+/* fadetastic links
+--------------------------------------------- */
+
+a:link, a:visited {
+	-webkit-transition: color .2s linear;
+	}
+a:hover {
+	color: rgba(55,146,179,.8);
+	}
+
+/* nav toggle
+--------------------------------------------- */
+
+#nav li a {
+	-webkit-transition: background-color .4s linear;
+	}
+#nav li a:hover {
+	background: rgba(0,0,0,.15);
+	}
+#nav li.selected a {
+	}
+
+.main img,.mod,frendlink{
+	border-radius:8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}

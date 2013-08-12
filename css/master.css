@@ -1,0 +1,262 @@
+/* 
+Title:		Master styles for screen media
+Author: 	dan@simplebits.com
+*/
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+	color: #51463d;
+	font-size: 62.5%;
+	background: #f3f2e8;
+	}
+a:link, a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	outline: none;
+	color: #3792b3;
+	}
+#wrap {
+	width: 80%;
+	max-width: 1000px;
+	min-width: 950px;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+	font-size: 1.3em;
+	}
+#header {
+	border-bottom: 1px solid #fff;
+	background: #766557 url(../img/h-bg-bottom.gif) repeat-x bottom left;
+	}
+#header-inner {
+	padding: 70px 0 0 0;
+	background: url(../img/nav-top-clouds.gif) repeat-x -80% 0;
+	}
+#logo {
+	margin: 0 0 20px 15px;
+	}
+#logo h1 {
+	float: left;
+	width: 188px;
+	height: 29px;
+		background: url(../img/tugboat-logo.png) no-repeat top left;
+	}
+#logo h1 img {
+	display: block;
+	height: 0;
+	}
+#logo p {
+	float: right;
+	margin: 7px 15px 0 0;
+	font-size: .9em;
+	font-weight: bold;
+	line-height: 1.2;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #e3c887;
+	}
+#tugboat {
+	position: absolute;
+	right: 0;
+	top: 42px;
+	}
+#nav {
+	position: relative;
+	width: 80%;
+	max-width: 1000px;
+	min-width: 680px;
+	margin: 0 auto;
+	font-size: 1.3em;
+	}
+#nav ul {
+	margin: 0 auto;
+	}
+#nav ul li {
+	float: left;
+	width: 20%;
+	margin: 0 0 0 0;
+	}
+#nav ul li.last {
+	margin-right: 0;
+	}
+#nav ul li a {
+	display: block;
+	float: left;
+	width: 100%;
+	font-size: 1.1em;
+	line-height: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #f3f2e8;
+	border-left: 1px solid #87705d;
+	}
+#nav ul li a strong {
+	display: block;
+	padding: .8em 15px;
+	}
+#nav ul li a em {
+	display: block;
+	font-size: .9em;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: none;
+	letter-spacing: 0;
+	color: #b2a18f;
+	}
+.main {
+	float: left;
+	width:695px;
+	margin-bottom: 30px;
+	}
+.main .content img{
+	padding:15px;
+	background:#e2e1d4;
+}
+.main h2{
+	color:#633;
+	font-size:3em;
+	text-align:center;
+	margin-bottom: 20px;
+}
+.main h3{
+	text-align: center;
+	color:#b2a18f;
+	font-size:2em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.content p{
+	text-indent: 2em;
+}
+.secondary {
+	float: right;
+	width: 25%;
+	}
+#footer {
+	clear: both;
+	margin: 0 auto;
+	padding: 10px 0 30px 0;
+	font-size: 1em;
+	color: #9c836e;
+	border-top: 2px solid #e2e1d4;
+	text-align:center;
+	}
+
+ol.specials li{
+	width:216px;
+	float:left;
+	margin:0 15px 1.5em 0;
+}
+ol.specials li div.special{
+	position:relative;
+	border:8px solid #e2e1d4;
+	border-radius:8px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+}
+ol.specials img{
+	width: 200px;
+	height: 180px;
+}
+ol.specials li div.special a span{
+	display:block;
+	position:absolute;
+	width:100%;
+	bottom:0;
+	left:0;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:1.1em;
+	font-weight:normal;
+	line-height:1.3em;
+	color:#ccc;
+	background:#333;
+	background:rgba(0,0,0,.7);
+	text-align:center;
+	padding:10px 0px 10px 0;
+}
+.main .histoty{
+	background-image:url(../../ainia.png);
+}
+.main .history .history-box{
+	font-size:18px;
+	color:black;
+	font-family:"Adobe 仿宋 Std R";
+	line-height:150%;
+}
+.main .history .history-box p{
+	text-indent:2em;
+	text-align:justify;
+}
+.main .beauty .beauty-box{
+	font-size:18px;
+	color:black;
+	font-family:"Adobe 仿宋 Std R";
+    line-height:150%;
+}
+.main .beauty .beauty-box p{
+	text-indent:2em;
+	text-align:justify;
+}
+.main .otherthings{
+	font-size:18px;
+	color:black;
+	font-family:"Adobe 仿宋 Std R";
+	line-height:150%;
+}
+.main .otherthings p{
+	text-indent:2em;
+	text-align:justify;
+}
+.mod {
+	margin: 65px 0 1.5em 0;
+	padding: 15px;
+	background: #fff;
+}
+
+.mod li{
+	padding:5px 0;
+	font-family:Verdana, Geneva, sans-serif;
+}
+.mod h3,.friendlink h3{
+	margin: 0;
+	padding: 0 0 4px 0;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #a14141;
+	border-bottom: 2px solid #ecebe1;
+}
+.mod em{
+	float:right;
+	color:#000;
+}
+.friendlink{
+	padding:15px;
+	margin:0 0 1.5em 0;
+}
+.friendlink p{
+	padding:5px;
+	color:#F00;
+}
+#footer{
+	height: 40px;
+	width: 100%;
+	margin-top: 50px;
+}
+#footer a {
+	color: #51463d;
+	}
+
+hr, .hide {
+	display: none;
+	}
+a img {
+	border: none;
+	}
+.group:after {
+	content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+    }
