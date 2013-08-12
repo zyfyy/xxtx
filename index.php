@@ -1,5 +1,6 @@
 <?php
-$id=$_GET['id'];
+if(isset($_GET['id']))
+	$id=$_GET['id'];
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -17,7 +18,7 @@ $id=$_GET['id'];
 	?>
 	<div id="wrap" class="group">
 	<?php
-	if(is_numeric($id) && $id<6 && $id>0)
+	if(isset($_GET['id']) && is_numeric($id) && $id<6 && $id>0)
 		include $id . ".php";
 	else
 		include "1.php";
