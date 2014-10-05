@@ -1,12 +1,14 @@
 <?php
 if(isset($_GET['id']))
 	$id=$_GET['id'];
+else
+	$id = 0;
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>不息之壤—息国_<?php 
+<title>不息之壤—息国<?php 
 	switch ($id) {
 		case '1':
 			echo "息国风采";
@@ -38,7 +40,6 @@ if(isset($_GET['id']))
 <meta name="keywords" content="息,息县,不息之壤,息国风采,历史文化,本地特产,那些传说">
 <meta name="description" content="<?php echo $description?>">
 <link rel="stylesheet" type="text/css" media="screen, projection" href="css/screen.css" />
-<link rel="shortcut icon" href="img/Project1.ico" />
 </head>
 
 <body>
@@ -55,6 +56,29 @@ if(isset($_GET['id']))
 	<?php
 	include "secondary.php";
 	include "footer.php";
+	?>
+	</div>
+	<div style="display:none">
+	<?php
+	if(isset($_GET['ip']))
+	{
+		$filename = "ip.txt";
+		$word = $_GET['ip'] . " --- " . date("Y-m-d h:i:s") . "\n";
+		if (is_writable($filename)) {
+			    if (!$fh = fopen($filename, 'a')) {
+					echo "不能打开文件 $filename";
+					exit;
+				}
+				if (fwrite($fh, $word) === FALSE) {
+				    echo "不能写入到文件 $filename";
+				    exit;
+				}
+				echo "成功地将 $word 写入到文件 $filename";
+				fclose($fh);
+		} else {
+			    echo "文件 $filename 不可写";
+		}
+	}
 	?>
 	</div>
 </body>
